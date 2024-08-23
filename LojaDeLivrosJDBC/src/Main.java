@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Configurar o banco de dados e criar tabelas se necessário
         SetupDatabase.setupTables();
 
         AutorDAO autorDAO = new AutorDAO();
@@ -31,7 +30,7 @@ public class Main {
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine();  // Consumir a nova linha após o número
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
